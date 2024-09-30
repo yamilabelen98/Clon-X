@@ -10,7 +10,7 @@ Este proyecto es un clon de la plataforma X (anteriormente conocida como Twitter
   - Nombre de usuario
   - Nombre completo
   - Avatar
-- **Feed de tweets**: Ve tus tweets y los de otros usuarios.
+- **Feed de tweets**: Ve tus tweets.
 - **Publicación de tweets**: Crea y publica nuevos tweets.
 
 ## Tecnologías utilizadas
@@ -25,7 +25,7 @@ Este proyecto es un clon de la plataforma X (anteriormente conocida como Twitter
 
 1. Clona este repositorio:
    ```
-   git clone https://github.com/tu-usuario/clon-de-x.git
+   git clone https://github.com/yamilabelen98/Clon-X.git
    ```
 
 2. Instala las dependencias:
@@ -59,7 +59,3 @@ Este proyecto es un clon de la plataforma X (anteriormente conocida como Twitter
 ## Contribuir
 
 Las contribuciones son bienvenidas. Por favor, abre un issue o realiza un pull request para sugerir cambios o mejoras.
-
-## Licencia
-
-[MIT](https://choosealicense.com/licenses/mit/)
