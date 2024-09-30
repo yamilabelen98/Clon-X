@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Clon de X
 
-## Getting Started
+Este proyecto es un clon de la plataforma X (anteriormente conocida como Twitter), desarrollado con tecnologías modernas de desarrollo web. Permite a los usuarios iniciar sesión, publicar tweets, ver su feed y gestionar su perfil.
 
-First, run the development server:
+## Características principales
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Autenticación con GitHub**: Inicia sesión fácilmente usando tu cuenta de GitHub.
+- **Gestión de sesión**: Cierra sesión cuando lo desees.
+- **Perfil de usuario**: Visualiza tu información de perfil, incluyendo:
+  - Nombre de usuario
+  - Nombre completo
+  - Avatar
+- **Feed de tweets**: Ve tus tweets y los de otros usuarios.
+- **Publicación de tweets**: Crea y publica nuevos tweets.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tecnologías utilizadas
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **[Next.js](https://nextjs.org/)**: Framework de React para aplicaciones web.
+- **[Supabase](https://supabase.io/)**: Plataforma de backend como servicio (BaaS) para gestión de base de datos y autenticación.
+- **[React](https://reactjs.org/)**: Biblioteca de JavaScript para construir interfaces de usuario.
+- **[TypeScript](https://www.typescriptlang.org/)**: Superconjunto tipado de JavaScript.
+- **[TailwindCSS](https://tailwindcss.com/)**: Framework de CSS para diseño rápido y responsivo.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Instalación
 
-## Learn More
+1. Clona este repositorio:
+   ```
+   git clone https://github.com/tu-usuario/clon-de-x.git
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. Instala las dependencias:
+   ```
+   cd clon-de-x
+   npm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Configura las variables de entorno:
+   Crea un archivo `.env.local` en la raíz del proyecto y añade las siguientes variables:
+   ```
+   NEXT_PUBLIC_SUPABASE_URL=tu_url_de_supabase
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=tu_clave_anonima_de_supabase
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+4. Inicia el servidor de desarrollo:
+   ```
+   npm run dev
+   ```
 
-## Deploy on Vercel
+5. Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver la aplicación.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Uso
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. En la página principal, haz clic en "Iniciar sesión con GitHub".
+2. Una vez autenticado, podrás ver tu perfil y feed de tweets.
+3. Utiliza el formulario de creación de tweets para publicar nuevos mensajes.
+4. Navega por la aplicación para ver tus tweets.
+5. Cuando hayas terminado, puedes cerrar sesión desde el menú de usuario.
+
+## Contribuir
+
+Las contribuciones son bienvenidas. Por favor, abre un issue o realiza un pull request para sugerir cambios o mejoras.
+
+## Licencia
+
+[MIT](https://choosealicense.com/licenses/mit/)
