@@ -26,7 +26,7 @@ export default function PostCard({
   content: string;
 }) {
   return (
-    <Card className="shadow-none bg-transparent hover:bg-slate-800 transition border-b rounded-none cursor-pointer border-white/20">
+    <Card className="shadow-none bg-transparent hover:bg-[#0f0e10] transition border-b rounded-none cursor-pointer border-white/20">
       <CardHeader className="justify-between">
         <div className="flex flex-row w-full">
           <Link href={`/${userName}`}>
@@ -45,35 +45,46 @@ export default function PostCard({
               <p>{content}</p>
             </CardBody>
             <CardFooter className="flex justify-between px-0 pt-3 mb-0 pb-0 ml-0 w-full">
-              <button className="flex justify-start items-center w-full max-w-[114px]">
-                <IconMessageCircle
-                  className="w-[18.75px] h-[18.75px]"
-                  color="gray"
-                />
-              </button>
-
-              <button className="flex justify-start items-center w-full max-w-[114px]">
-                <LuRepeat2 className="w-[18.75px] h-[18.75px]" color="gray" />
-              </button>
-
-              <button className="flex justify-start items-center w-full max-w-[114px]">
-                <IconHeart className="w-[18.75px] h-[18.75px]" color="gray" />
-              </button>
-
-              <button className="flex justify-start items-center w-full max-w-[114px]">
-                <IoMdStats className="w-[18.75px] h-[18.75px]" color="gray" />
-              </button>
-
-              <div className="flex ml-auto">
-                <button className="w-[34.75px] h-[34.75px] items-center flex justify-center">
-                  <GoBookmark
-                    className="w-[18.75px] h-[18.75px]"
+              <div className="flex flex-row justify-between w-[80%]">
+                <button className="w-[34.75px] h-[34.75px] items-center flex justify-center hover:bg-gray-700 rounded-full">
+                  <IconMessageCircle
+                    className="w-[18.75px] h-[18.75px] hover:fill-blue-500 rounded-full"
                     color="gray"
                   />
                 </button>
-                <button className="w-[34.75px] h-[34.75px] items-center flex justify-center hover:bg-blue-400 rounded-full">
+
+                <button className="w-[34.75px] h-[34.75px] items-center flex justify-center hover:bg-gray-700 rounded-full">
+                  <LuRepeat2
+                    className="w-[18.75px] h-[18.75px] hover:fill-blue-500"
+                    color="gray"
+                  />
+                </button>
+
+                <button className="w-[34.75px] h-[34.75px] items-center flex justify-center hover:bg-gray-700 rounded-full">
+                  <IconHeart
+                    className="w-[18.75px] h-[18.75px] hover:fill-blue-500"
+                    color="gray"
+                  />
+                </button>
+
+                <button className="w-[34.75px] h-[34.75px] items-center flex justify-center hover:bg-gray-700 rounded-full">
+                  <IoMdStats
+                    className="w-[18.75px] h-[18.75px] hover:fill-blue-500"
+                    color="gray"
+                  />
+                </button>
+              </div>
+
+              <div className="flex ml-auto">
+                <button className="w-[34.75px] h-[34.75px] items-center flex justify-center hover:bg-gray-700 rounded-full">
+                  <GoBookmark
+                    className="w-[18.75px] h-[18.75px] hover:fill-blue-500"
+                    color="gray"
+                  />
+                </button>
+                <button className="w-[34.75px] h-[34.75px] items-center flex justify-center hover:bg-gray-700 rounded-full">
                   <RiShare2Line
-                    className="w-[18.75px] h-[18.75px] hover:fill-blue-600"
+                    className="w-[18.75px] h-[18.75px] hover:fill-blue-500"
                     color="gray"
                   />
                 </button>

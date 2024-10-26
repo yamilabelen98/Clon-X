@@ -8,8 +8,9 @@ export async function AuthButtonServer() {
     data: { session },
   } = await supabase.auth.getSession();
   //recuperamos la sesión
+  const userOrganic = cookies().get("organicSession")?.value || null;
 
-  return <AuthButton session={session} />;
+  return <AuthButton session={session || userOrganic} />;
   //renderizamos el componente del cliente y le pasamos
   //la sesión del usuario
 }
