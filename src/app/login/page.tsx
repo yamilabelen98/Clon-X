@@ -14,7 +14,7 @@ export default async function Login() {
   const parsedOrganicSession = organicSession
     ? JSON.parse(organicSession)
     : null;
-  if (!data.session || !parsedOrganicSession) {
+  if (data.session || parsedOrganicSession) {
     redirect("/");
   }
   return (

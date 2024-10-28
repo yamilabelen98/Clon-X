@@ -24,11 +24,13 @@ Este proyecto es un clon de la plataforma X (anteriormente conocida como Twitter
 ## Instalación
 
 1. Clona este repositorio:
+
    ```
    git clone https://github.com/yamilabelen98/Clon-X.git
    ```
 
 2. Instala las dependencias:
+
    ```
    cd clon-de-x
    npm install
@@ -36,12 +38,14 @@ Este proyecto es un clon de la plataforma X (anteriormente conocida como Twitter
 
 3. Configura las variables de entorno:
    Crea un archivo `.env.local` en la raíz del proyecto y añade las siguientes variables:
+
    ```
    NEXT_PUBLIC_SUPABASE_URL=tu_url_de_supabase
    NEXT_PUBLIC_SUPABASE_ANON_KEY=tu_clave_anonima_de_supabase
    ```
 
 4. Inicia el servidor de desarrollo:
+
    ```
    npm run dev
    ```
@@ -55,6 +59,20 @@ Este proyecto es un clon de la plataforma X (anteriormente conocida como Twitter
 3. Utiliza el formulario de creación de tweets para publicar nuevos mensajes.
 4. Navega por la aplicación para ver tus tweets.
 5. Cuando hayas terminado, puedes cerrar sesión desde el menú de usuario.
+
+## Imágenes
+
+### Iniciar sesión desde GitHub
+
+![Iniciar sesión desde GitHub](./src/app/Img/inicio_de_sesion.png)
+
+### Publicar un tweet
+
+![Publicar un tweet](./src/app/Img/posteos.png)
+
+### Cerrar sesión
+
+![Cerrar sesión](./src/app/Img/cerrar%20_sesion.png)
 
 ## Contribuir
 

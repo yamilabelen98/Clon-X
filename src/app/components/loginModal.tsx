@@ -26,27 +26,33 @@ const LoginModal: FC<loginModalTypes> = () => {
   // Función para registrar un nuevo usuario en la base de datos
   const handleSignUp = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!name || !email || !password) {
+      console.error("Por favor completa todos los campos.");
+      return; // Salir si hay campos vacíos
+    }
     try {
       const userId = uuidv4();
       const dataQuery = {
         id: userId,
-        user_email: email,
-        encrypted_password: password,
         name: name,
         user_name: name || "default_user_name",
         avatar_url: "https://example.com/default-avatar.png",
       };
-      const { data, error } = await supabase.from("users").insert([dataQuery]);
-      console.log(error, "hay error");
+      const { data, error } = await supabase.auth.signUp({
+        email: email,
+        password: password,
+        options: { data: dataQuery },
+      });
       if (error) {
         console.error(
           "Error al registrar a supabase:",
-          error.message,
-          dataQuery
+          error.message
+          // dataQuery
         );
         return;
       }
-      setCookie("organicSession", JSON.stringify(dataQuery), 1);
+      console.log(data, error, "los datos al registrar");
+      // setCookie("organicSession", JSON.stringify(dataQuery), 1);
 
       // Si el registro es exitoso, redirigir a otra página o cerrar el modal
       setIsModalOpen(false);

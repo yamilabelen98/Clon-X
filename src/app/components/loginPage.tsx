@@ -11,6 +11,7 @@ const LoginPage = () => {
   const supabase = createClientComponentClient();
 
   const handleLogin = async (e: React.FormEvent) => {
+    console.log("handle");
     e.preventDefault();
     try {
       const { data, error } = await supabase.auth.signInWithPassword({

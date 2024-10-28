@@ -8,7 +8,13 @@ import {
 import { useRouter } from "next/navigation";
 import { deleteCookie, setCookie } from "../utils/cookies";
 
-export function AuthButton({ session }: { session: Session | null }) {
+export function AuthButton({
+  session,
+  isLeftModal = false,
+}: {
+  session: any;
+  isLeftModal?: boolean; // PARA EL CASO DE QUE EL MODAL SEA DE LA IZQUIERDA
+}) {
   const supabase = createClientComponentClient();
   const router = useRouter();
 
@@ -22,9 +28,13 @@ export function AuthButton({ session }: { session: Session | null }) {
   };
   const handleSignOut = async () => {
     await supabase.auth.signOut();
-    deleteCookie("organicSession");
+    // deleteCookie("organicSession");
     router.refresh();
   };
+
+  const closeSessionText = isLeftModal
+    ? `Cerrar la sesión de @${session?.user.user_metadata.user_name}`
+    : "Cerrar sesión";
 
   return (
     <header>
@@ -52,9 +62,9 @@ export function AuthButton({ session }: { session: Session | null }) {
       ) : (
         <button
           onClick={handleSignOut}
-          className="w-full bg-red-600 text-white font-bold py-2 px-4 rounded"
+          className={`w-full bg-black text-white font-bold py-2 px-4 rounded shadow-custom-glow  hover:bg-gray-900`}
         >
-          Cerrar sesión
+          {closeSessionText}
         </button>
       )}
     </header>
