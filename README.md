@@ -57,7 +57,7 @@ Este proyecto es un clon de la plataforma X (anteriormente conocida como Twitter
 5. Cuando hayas terminado, puedes cerrar sesión desde el menú de usuario.
 
 ### Iniciar sesión desde GitHub
-![Iniciar sesión desde GitHub](ruta/a/tu-imagen-inicio-sesion.png)
+![Iniciar sesión desde GitHub]("C:\Users\yami4\Pictures\Screenshots\inicio de sesion.png")
 
 ### Publicar un tweet
 ![Publicar un tweet]("C:\Users\yami4\Pictures\Screenshots\posteos.png")
