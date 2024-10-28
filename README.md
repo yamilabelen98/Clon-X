@@ -56,6 +56,13 @@ Este proyecto es un clon de la plataforma X (anteriormente conocida como Twitter
 4. Navega por la aplicación para ver tus tweets.
 5. Cuando hayas terminado, puedes cerrar sesión desde el menú de usuario.
 
-## Contribuir
+### Iniciar sesión desde GitHub
+![Iniciar sesión desde GitHub](ruta/a/tu-imagen-inicio-sesion.png)
+
+### Publicar un tweet
+![Publicar un tweet]("C:\Users\yami4\Pictures\Screenshots\posteos.png")
+
+### Cerrar sesión
+![Cerrar sesión]("C:\Users\yami4\Pictures\Screenshots\cerrar sesion.png")
 
 Las contribuciones son bienvenidas. Por favor, abre un issue o realiza un pull request para sugerir cambios o mejoras.
